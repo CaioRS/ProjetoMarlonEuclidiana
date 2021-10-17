@@ -3,13 +3,24 @@ using System;
 
 class euclidiana{
 
-  public List<double> sim = new List<double>();
+  public static List<double> sim = new List<double>();
   // funcao de similaridades.
 
   public static void Similaridades(pessoa Ana, pessoa Pedro, pessoa Claudia, pessoa Leonardo){
 
     //similaridade Ana e Leonardo
-    Console.WriteLine(Distancia(Leonardo,Ana));
+    sim.Add(Distancia(Leonardo,Ana));
+    sim.Add(Distancia(Leonardo,Pedro));
+    sim.Add(Distancia(Leonardo,Claudia));
+
+
+
+    Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Ana.nome,sim[0]);
+    Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Pedro.nome,sim[1]);
+    Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Claudia.nome,sim[2]);
+
+
+    
 
 
   }
