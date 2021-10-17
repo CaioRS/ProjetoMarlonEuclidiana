@@ -21,8 +21,68 @@ class euclidiana{
     Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Pedro.nome,sim[1]);
     Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Claudia.nome,sim[2]);
 
+    double indicacao = 0;
+    double totsim = 0;
 
+    // Calculo nota para o filme 1:
 
+    if (Ana.notas[0]!=0){
+      indicacao += Ana.notas[0] * sim[0];
+      totsim += sim[0];
+    }
+
+    if (Pedro.notas[0]!=0){
+      indicacao += Pedro.notas[0] * sim[1];
+      totsim += sim[1];
+    }
+
+    if (Claudia.notas[0]!=0){
+      indicacao += Claudia.notas[0] * sim[2];
+      totsim += sim[2];
+    }
+
+    Console.WriteLine("A provavel nota para o Filme Freddy x Jason eh {0}\n",indicacao/totsim);
+
+    indicacao = 0;
+    totsim = 0;
+
+    // Calculo nota para o filme 3:
+
+    if (Ana.notas[2]!=0){
+      indicacao += Ana.notas[2] * sim[0];
+      totsim += sim[0];
+    }
+
+    if (Pedro.notas[2]!=0){
+      indicacao += Pedro.notas[2] * sim[1];
+      totsim += sim[1];
+    }
+
+    if (Claudia.notas[2]!=0){
+      indicacao += Claudia.notas[2] * sim[2];
+      totsim += sim[2];
+    }
+
+    Console.WriteLine("A provavel nota para o Filme Star Trek eh {0}\n",indicacao/totsim);
+
+        // Calculo nota para o filme 6:
+
+    if (Ana.notas[5]!=0){
+      indicacao += Ana.notas[5] * sim[0];
+      totsim += sim[0];
+    }
+
+    if (Pedro.notas[5]!=0){
+      indicacao += Pedro.notas[5] * sim[1];
+      totsim += sim[1];
+    }
+
+    if (Claudia.notas[5]!=0){
+      indicacao += Claudia.notas[5] * sim[2];
+      totsim += sim[2];
+    }
+
+    Console.WriteLine("A provavel nota para o Filme Star Wars eh {0}\n",indicacao/totsim);
     
 
 
@@ -37,7 +97,7 @@ class euclidiana{
         dist = dist + Math.Pow((usu1.notas[i] - usu2.notas[i]), 2);;
       }
     }
-    return 1/Math.Sqrt(dist);
+    return 1/(1 + Math.Sqrt(dist));
   }
 
 
