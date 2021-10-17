@@ -13,7 +13,7 @@ class euclidiana{
     //similaridade Ana e Pedro
     sim.Add(Distancia(Leonardo,Pedro));
     //similaridade Ana e Claudia
-    sim.Add(Distancia(Leonardo,Claudia));
+    sim.Add(Distancia(Leonardo,Claudia));  
 
 
 
