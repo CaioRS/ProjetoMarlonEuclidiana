@@ -23,9 +23,9 @@ class Program {
     atracoes.Add(Norbit);
     atracoes.Add(StarWars);
 
-    for (int i = 0; i < atracoes.Count; i++){      
-      Console.WriteLine(atracoes[i].nome + "\n");
-    }
+    //for (int i = 0; i < atracoes.Count; i++){      
+      //Console.WriteLine(atracoes[i].nome + "\n");
+    //}
 
     // instanciacao usuarios
 
@@ -37,11 +37,18 @@ class Program {
 
     // inclusao das notas dos filmes
 
-    Ana.Nota(2.5 , 3.5 , 3.0, 3.5 , 2.5 , 3.0 );
 
-    for (int i = 0; i < Ana.notas.Count; i++){      
-      Console.WriteLine(Ana.notas[i] + "\n");
-    }
+
+    Ana.Nota(2.5 , 3.5 , 3.0, 3.5 , 2.5 , 3.0 );
+    Pedro.Nota(2.5 , 3.0 , 0 , 3.5, 0, 4);
+    Claudia.Nota(0 , 3.5 , 3 , 4 , 2.5 , 4.5);
+    Leonardo.Nota(0 , 4.5 , 0, 4, 1 , 0); // Esse usuario sera nosso ponto de analise em especifico
+
+    // teste de notas nos usuarios
+    
+    //for (int i = 0; i < Ana.notas.Count; i++){      
+      //Console.WriteLine(Leonardo.notas[i] + "\n");
+    //}
 
   }
 }
