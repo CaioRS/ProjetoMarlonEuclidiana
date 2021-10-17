@@ -10,7 +10,9 @@ class euclidiana{
 
     //similaridade Ana e Leonardo
     sim.Add(Distancia(Leonardo,Ana));
+    //similaridade Ana e Pedro
     sim.Add(Distancia(Leonardo,Pedro));
+    //similaridade Ana e Claudia
     sim.Add(Distancia(Leonardo,Claudia));
 
 
@@ -18,6 +20,7 @@ class euclidiana{
     Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Ana.nome,sim[0]);
     Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Pedro.nome,sim[1]);
     Console.WriteLine("Similaridade entre {0} e {1} eh : {2}\n",Leonardo.nome,Claudia.nome,sim[2]);
+
 
 
     
