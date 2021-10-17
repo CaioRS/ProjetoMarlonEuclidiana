@@ -50,5 +50,10 @@ class Program {
       //Console.WriteLine(Leonardo.notas[i] + "\n");
     //}
 
+    
+    euclidiana.Similaridades(Ana , Pedro , Claudia , Leonardo);
+
+
+
   }
 }
