@@ -27,7 +27,21 @@ class Program {
       Console.WriteLine(atracoes[i].nome + "\n");
     }
 
+    // instanciacao usuarios
 
+    pessoa Ana = new pessoa("Ana");
+    pessoa Pedro = new pessoa("Pedro");
+    pessoa Claudia = new pessoa("Claudia");
+    pessoa Leonardo = new pessoa("Leonardo");
+
+
+    // inclusao das notas dos filmes
+
+    Ana.Nota(2.5 , 3.5 , 3.0, 3.5 , 2.5 , 3.0 );
+
+    for (int i = 0; i < Ana.notas.Count; i++){      
+      Console.WriteLine(Ana.notas[i] + "\n");
+    }
 
   }
 }
